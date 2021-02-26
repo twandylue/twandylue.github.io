@@ -1,0 +1,62 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+/* 
+	.col {
+		flex: 1;
+	} */
+
+}
+
+@media (min-width: 1200px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+    .row{
+        background-color: #030303;
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        /* width: 1040px; */
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+	.col {
+        border: solid #5B6DCD 3px;        
+        /* width: 1200px; */
+        width: 45%;
+        padding-right: 1em;
+        padding-left: 1em;
+        margin: 10px auto;
+        background-color: #f08bc3;
+	}
+
+    .button p {
+        text-align: center;
+
+        /* 可置中 */
+        border: solid orangered 2px;
+        background-color: palegoldenrod;
+        width: 100px;
+        margin: 2px auto; 
+
+        margin-top: 1em;
+        font-size: 16px;
+    }
+
+}
