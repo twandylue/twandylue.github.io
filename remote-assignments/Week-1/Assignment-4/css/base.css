@@ -1,0 +1,388 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+	display: flex;
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 2em;
+    margin-bottom: 28px;
+	/* margin: 28px auto; */
+}
+
+.banner_text {
+	display: flex;
+	flex-direction:column;
+	width: 55%;
+}
+
+.headline {
+	font-size: 3.5em;
+	margin: 0;
+    color: #3639ca;
+}
+
+.tagline {
+	margin: 1em 0 1em;
+	/* background-color: black; */
+}
+
+.banner_button p {
+    text-align: center;
+    border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(177, 198, 245, 0.534);
+    width: 100px;
+	height: auto;
+    font-size: 14px;
+}
+
+.section-title{
+	display: block;
+    text-align: center;
+    background: #fff;
+	padding: 0;
+	margin-top: 1em;
+    margin-bottom: 1em;  
+}
+
+.section-title h2{
+    font-size: 2.4em;
+	/* font-size: 4em; */
+    color: #050505;
+}
+
+.section-title-bold {
+	font-weight: bold;
+	font-size: 2.0em;
+    color: #080808;
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row ;
+	justify-content: space-between;
+	/* width: 1200px; */
+}
+
+.item_content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100px;
+	/* margin: auto; */
+	margin: 2em 150px;
+	font-size: 1em;
+}
+
+.item_logo {
+	width:150px;
+	margin: 0 0 15px;
+}
+
+.item_button p {
+	text-align: center;
+    border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(90, 139, 245, 0.534);
+    width: 300px;
+	height: auto;
+	padding: 5px;
+	margin: 30px auto;
+    font-size: 16px;
+}
+
+.mid_content {
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	margin: 0 auto;
+}
+
+.mid_content_box {
+	display: flex;
+	flex-direction: column;
+	width:45%;
+	height:auto;
+	padding:0 1em;
+	margin: 0 auto;
+	/* background-color: #050505; */
+}
+
+.mid_content_box p {
+	margin-bottom: auto;
+}
+
+.mid_content_button p {
+	text-align: center;
+    border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(90, 139, 245, 0.534);
+    width: 300px;
+	height: auto;
+	padding: 5px;
+	/* margin-bottom: auto; */
+    font-size: 16px;
+}
+
+.News_tagline {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 3.5em;
+}
+
+.News_content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto;
+
+	width: 95%;
+	justify-content: space-between;
+
+	background-color: #050505;
+	border: solid #5B6DCD 3px;  
+}
+
+.News_content_box {
+	display: flex;
+	flex-direction: column;
+	width: 22%;
+	margin: 0 auto;
+	padding: 0 1em;
+
+	border: solid #5B6DCD 3px;  
+    background-color: #f08bc3;
+}
+
+.News_logo {
+	width:40%;
+	margin: 1em auto;
+	/* border: solid #5B6DCD 3px;  
+    background-color: #f08bc3; */
+}
+
+.News_content_box h2 {
+	font-size: 1.3em;
+	margin-bottom: 0.3em;
+}
+
+.News_content_box p {
+	/* 按鈕置底 */
+	margin-bottom: auto;
+}
+
+.News_content_box_button p {
+	margin-bottom: 0;
+    /* border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(90, 139, 245, 0.534); */
+    width: auto;
+	padding-left: 7px;
+	padding-bottom: 1em;
+    font-size: 0.97em;
+	color: salmon; 
+	/* 字體沒變色? */
+}
+
+/* 怎麼把按鈕外框隨內容調整呢? */
+
+.developers_content {
+	/* display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; */
+	padding-bottom: 40px;
+	background-color: rgba(238, 142, 17, 0.534);
+}
+
+.introduction {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 1em auto;
+	border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(90, 139, 245, 0.534);
+}
+
+.directory {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	background-color: rgba(61, 238, 17, 0.534);
+}
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 1em auto;
+	width: 20%;
+	border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(151, 25, 25, 0.534);
+}
+
+.directory h2 {
+	font-size: 24px;
+	width: 50%;
+	margin: 0 auto 10px;
+	border: solid rgb(15, 15, 15) 1.5px;
+	background-color: rgba(10, 10, 10, 0.534);
+}
+
+.location {
+	font-size: 16px;
+	width: 100%;
+	margin: 0 auto 16px;
+}
+.catalog p {
+	font-size: 16px;
+	width: 90%;
+	margin: 0 auto;
+
+	border: solid rgb(15, 15, 15) 1.5px;
+	background-color: rgba(10, 10, 10, 0.534);
+}
+
+.catalog_button p {
+	margin-top: 16px;
+	margin-bottom: 0;
+    width: 60%;
+	padding: 0 7px;
+    font-size: 8px;
+	color: salmon; 
+	/* 字體沒變色? */
+
+	border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(161, 243, 9, 0.534);
+}
+
+.devided_footer {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: 1em auto;
+	justify-content: space-between;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.content-box{
+    list-style-type: disc;
+    padding-left: 1em;
+}
+
+.button p {
+    text-align: center;
+    border: solid rgb(15, 15, 15) 1.5px;
+    background-color: rgba(177, 198, 245, 0.534);
+    width: 100px;
+    margin: 1em auto; /* 置中 */
+    font-size: 14px;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 600px;
+}
+.banner-img {
+	margin: 0 auto;
+	width: 400px;
+}
+.title-logo {
+    vertical-align: middle;
+    width: 35px;
+}
+.headline {
+	margin-bottom: 0;
+}
+.feat-img {
+	border-radius: 5px;
+}
