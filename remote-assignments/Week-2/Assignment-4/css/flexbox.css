@@ -1,0 +1,51 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+    .main-header,
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+		margin: 0 auto;
+    }
+    .hide_and_show{
+        /* 先將內容藏起來 */
+        display: none;
+    }
+    .col {
+        width: 45%;
+        margin: 10px auto;
+	}
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        /* 當螢幕寬度超過1200px時，固定content box總寬度為1200px */
+        width: 1200px; 
+        margin: 0 auto;
+    }
+    .hide_and_show{
+        /* 先將內容藏起來 */
+        display: none;
+    }
+}
