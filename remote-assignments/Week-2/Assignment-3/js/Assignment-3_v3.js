@@ -1,11 +1,11 @@
 function count(input) {
     let ans = {};
     for (let i = 0; i<input.length; i++) {
-        if (ans[`${input[i]}`] >= 1) {
-            ans[`${input[i]}`] += 1;
+        if (ans[input[i]] >= 1) {
+            ans[input[i]] += 1;
             continue;
         } else {
-            ans[`${input[i]}`] = 1;
+            ans[input[i]] = 1;
         }
     }
     return(ans);
@@ -14,11 +14,11 @@ function count(input) {
 function groupByKey(input) {
     let ans = {};
     for (let i = 0; i<input.length; i++) {
-        if (ans[`${input[i]['key']}`] >= 0) {
-            ans[`${input[i]['key']}`] += input[i]['value'];
+        if (ans[input[i]['key']] >= 0) {
+            ans[input[i]['key']] += input[i]['value'];
             continue;
         } else {
-            ans[`${input[i]['key']}`] = input[i]['value'];
+            ans[input[i]['key']] = input[i]['value'];
         }
     }
     return(ans);
