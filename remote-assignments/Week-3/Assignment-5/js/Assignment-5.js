@@ -19,7 +19,7 @@
 //should return [0,1]
 
 // single loop O(n)
-function twoSum_2(nums, target) {
+function twoSum(nums, target) {
     const list = [];
     for(let i=0; i<nums.length; i++){
         const now = nums[i];
@@ -33,6 +33,6 @@ function twoSum_2(nums, target) {
     }
     return(-1);
 }
-console.log(twoSum_2([2, 7, 11, 15], 9));
+console.log(twoSum([2, 7, 11, 15], 9));
 //should return [0,1]
 
