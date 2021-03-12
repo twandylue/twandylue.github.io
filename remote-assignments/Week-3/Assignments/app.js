@@ -5,7 +5,7 @@ const cookieParser =require('cookie-parser');
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-// serve static assets in public folder for assignment-3
+// serve static assets in public folder for assignment-3 
 app.use(express.static('public'));
 
 // set pug for assignment-2
