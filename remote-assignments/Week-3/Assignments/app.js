@@ -8,7 +8,7 @@ app.use(cookieParser());
 // serve static assets in public folder for assignment-3
 app.use(express.static('public'));
 
-// pug for assignment-2
+// set pug for assignment-2
 app.set('view engine', 'pug'); 
 
 // Assignment-1
