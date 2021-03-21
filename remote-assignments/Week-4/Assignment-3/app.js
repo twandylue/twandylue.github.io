@@ -77,18 +77,18 @@ app.get('/alluser', (req, res) => {
 })
 
 // 額外功能
-// 創建table
-app.get('/createTable', (req, res) => {
-    let sql = 'CREATE TABLE user(id int(10) NOT NULL AUTO_INCREMENT, email char(50), password char(50), PRIMARY KEY (`id`));'
-    db.query(sql, (err, result) => {
-        if (err) {
-            throw err;
-        } else {
-            // console.log(result);
-            // res.send(result);
-            res.send('<h2>Creating table success!</h2>');
-        }
-    })
-})
+// 創建table(私人使用)
+// app.get('/createTable', (req, res) => {
+//     let sql = 'CREATE TABLE user(id int(10) NOT NULL AUTO_INCREMENT, email char(50), password char(50), PRIMARY KEY (`id`));'
+//     db.query(sql, (err, result) => {
+//         if (err) {
+//             throw err;
+//         } else {
+//             // console.log(result);
+//             // res.send(result);
+//             res.send('<h2>Creating table success!</h2>');
+//         }
+//     })
+// })
 
 app.listen(3000, () => {console.log('running at port: 3000')} );
